@@ -1,108 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous" />
-
-  <title>MLB Experience</title>
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <title>MLB Experience</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark home-nav nav-title">
-    <a class="navbar-brand nav-title" href="#">MLB Experience</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link homePage" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link searchPage" href="#">Search Players</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Search Teams</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row d-flex justify-content-center text-center row-width">
-      <div class="col-md-8">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/kirk-gibson.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5 class="nav-title">Kurt Gibson</h5>
-                  <p class="nav-title">1988 World Series Home Run</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/sidslid.jpg" height="466px" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5 class="nav-title">Sid Bream</h5>
-                  <p class="nav-title">1992 NLCS Game Winning Run</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/coxthrown.jpg" height="466px" alt="Fourth slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5 class="nav-title">Bobby Cox</h5>
-                  <p class="nav-title">Defiance</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/dback.jpg" height="466px" alt="Fifth slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="nav-title">Luis Gonzalez</h5>
-                    <p class="nav-title">2001 World Series Ending</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img class="d-block w-100" src="./assets/sox.jpg" height="466px" alt="Sixth slide">
-                  <div class="carousel-caption d-none d-md-block">
-                      <h5 class="nav-title">Boston Red Sox</h5>
-                      <p class="nav-title">2018 Beating The Dodgers</p>
-                    </div>
-                </div>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark home-nav nav-title">
+        <a class="navbar-brand nav-title" href="#">MLB Experience</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link homePage" href="#">Create Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link searchPage" href="#">Login</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <div class="container">
+          <form class="form-inline">
+              <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputPassword2" class="sr-only">Username</label>
+                  <input type="text" class="form-control reg-username" id="inputPassword2" placeholder="Username">
+                </div>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-secondary mb-2">Register</button>
+            </form>
       </div>
-    </div>
-    <div class="row d-flex justify-content-center text-center row-width">
-        <h2 class="nav-title h2 hide">Search For Active and Inactive Players By Last Name</h2>
-      <div class="col-md-6">
-        <form class="form-inline hide">
-          
-          <input class="form-control mr-sm-2 playerInput" type="search" placeholder="Last Name" aria-label="Search" />
-          <button type="button" class="btn btn-secondary playerSearch">
-            Search
-          </button>
-          <button type="button" class="btn btn-secondary clearResults">
-              Clear Results
-            </button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-  <div id="playerResults" class="card-deck row-width"></div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="./js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="./js/login.js"></script>
 </body>
-
 </html>
