@@ -1,0 +1,33 @@
+body {
+    background-image: url('../assets/stp.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.home-nav{
+    opacity: 0.6;
+    height:75px;
+}
+.nav-title{
+    font-family: 'Archivo Black', sans-serif;
+}
+.row-width{
+    width:100%;
+}
+.card{
+    opacity:0.8;
+}
+.slide{
+    margin-top:45px;
+}
+.form-inline{
+    margin-top:65px;
+}
+.hide{
+    display:none;
+}
+.h2{
+    color:white;
+}
+.playerSearch{
+margin-right:5px;
+}
