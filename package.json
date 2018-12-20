@@ -20,6 +20,7 @@
   "homepage": "https://github.com/afw821/MLB-Experience#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "mongoose": "^5.4.0",
     "path": "^0.12.7"
   }
 }

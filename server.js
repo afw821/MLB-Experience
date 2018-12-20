@@ -1,5 +1,6 @@
 // Imports express into our app and sets it up for use
 const express = require('express');
+const mongoose = require('mongoose');
 
 
 
@@ -15,9 +16,16 @@ app.use(express.static('public'));
 
 // Routes
 // -----------------
+if(process.env.MONGODB_URI){
+  mongoose.connect(process.env.MONGODB_URI);
+}else{
 
+
+mongoose.connect('mongodb://localhost/MLBDB', { useNewUrlParser: true}); //name of database kudositeDB
+}
 
 require('./routes/html-routes')(app);
+require('./routes/api-routes')(app);
 
 
 
