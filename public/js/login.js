@@ -3,23 +3,22 @@
 const registerUser = function (e) {
     e.preventDefault();
     const username = $('.reg-username').val().trim().toLowerCase();
-    const password = $().val().trim().toLowerCase();
+    const password = $('.reg-password').val().trim().toLowerCase();
 
     $.post('/api/user', {username: username, password: password})
     .then(function(data){
-        console.log(data);
+        console.log('register' + data);
     }).catch(function(err){
         console.log(err);
-        alert('There was an error registering, please try again');
     });
 }
-$().on('click', registerUser);
+$('.register').on('click', registerUser);
 
 
 const loginUser = function (e) {
     e.preventDefault();
-    const username = $().val().trim().toLowerCase();
-    const password = $().val().trim().toLowerCase();
+    const username = $('.login-username').val().trim().toLowerCase();
+    const password = $('.login-password').val().trim().toLowerCase();
 
     $.post('/api/session', {username: username, password: password})
     .then(function(data){
@@ -27,7 +26,14 @@ const loginUser = function (e) {
         if(data[0]._id){
             sessionStorage.setItem('token', data[0]._id)
             window.location.href = "/search";
+        }else{
+            alert('Incoreect Username or Password');
         }
     })
 } 
-$().on('click', loginUser); 
+$('.login').on('click', loginUser); 
+
+const logoutUser = function (e) {
+    window.location.href = "/login";
+}
+$('.logout').on('click', logoutUser);
