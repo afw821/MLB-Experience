@@ -24,7 +24,7 @@ if(process.env.MONGODB_URI){
 }else{
 
 
-mongoose.connect('mongodb://localhost/MLBDB', { useNewUrlParser: true}); //name of database kudositeDB
+mongoose.connect('mongodb://localhost/MLBDB', { useNewUrlParser: true}); //name of database MLBDB
 }
 //requiring html and api routes
 require('./routes/html-routes')(app);

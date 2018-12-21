@@ -18,6 +18,8 @@ const UserSchema = new Schema ({
    }
   
 });
+
+//BCRYPT JS to encrypt users password on the database
 UserSchema.pre('save', function(next) {
     const user = this;
 
