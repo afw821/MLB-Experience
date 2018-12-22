@@ -5,6 +5,7 @@ module.exports = function (app) {
     app.post('/api/user', function (req,res) {
         User.create(req.body)
         .then(function (data){
+            console.log('post' + data);
             res.json(data);
         })
         .catch(function(err){
