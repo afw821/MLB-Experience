@@ -20,11 +20,8 @@
   "homepage": "https://github.com/afw821/MLB-Experience#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.0",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
     "path": "^0.12.7"
   }
 }
