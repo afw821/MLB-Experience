@@ -26,8 +26,10 @@ const loginUser = function (e) {
         // const DATA = JSON.stringify(data);
 
         console.log(data);
-        if(data[0]._id){
-            sessionStorage.setItem('token', data[0]._id)
+        console.log('id');
+        console.log('login data' + data._id);
+        if(data._id){
+            sessionStorage.setItem('token', data._id)
             window.location.href = "/search";
         }else{
             alert('Incoreect Username or Password');
