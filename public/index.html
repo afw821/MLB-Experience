@@ -32,35 +32,71 @@
   </nav>
   <div class="container">
     <div class="row d-flex justify-content-center text-center row-width">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 class="display-4">Welcome to MLB Experience</h1>
+          <p class="lead">Create a username and password and click register. Enter these credentials to sign in and
+            begin searching for players and teams immediately!</p>
+          <hr class="my-4">
+          <div class="row d-flex justify-content-center text-center row-width">
+            <div class="col-md-4">
+              <h5>Register</h5>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center text-center row-width">
+            <div class="col-md-4">
+              <form class="form">
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputPassword2" class="sr-only">Username</label>
+                  <input type="text" class="form-control reg-username" placeholder="Username">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input type="password" class="form-control reg-password" id="inputPassword2" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-secondary mb-2 register">Register</button>
+              </form>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row d-flex justify-content-center text-center row-width">
+              <div class="col-md-4">
+                <h5>Login</h5>
+              </div>
+            </div>
+          <div class="row d-flex justify-content-center text-center row-width">
+              <div class="col-md-4">
+                <form class="form">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Username</label>
+                    <input type="text" class="form-control login-username" placeholder="Username">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Password</label>
+                    <input type="password" class="form-control login-password" id="inputPassword2" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-secondary mb-2 login">Login</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row d-flex justify-content-center text-center row-width">
       <div class="col-md-8">
-        <form class="form-inline">
+        <form class="form-inline" action="/login" method="post">
           <div class="form-group mx-sm-3 mb-2">
             <label for="inputPassword2" class="sr-only">Username</label>
-            <input type="text" class="form-control reg-username" placeholder="Username">
+            <input type="text" class="form-control login-username" placeholder="Username">
           </div>
           <div class="form-group mx-sm-3 mb-2">
             <label for="inputPassword2" class="sr-only">Password</label>
-            <input type="password" class="form-control reg-password" id="inputPassword2" placeholder="Password">
+            <input type="password" class="form-control login-password" id="inputPassword2" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-secondary mb-2 register">Register</button>
+          <button type="submit" class="btn btn-secondary mb-2 login">Login</button>
         </form>
       </div>
-    </div>
-    <div class="row d-flex justify-content-center text-center row-width">
-        <div class="col-md-8">
-          <form class="form-inline" action="/login" method="post">
-            <div class="form-group mx-sm-3 mb-2">
-              <label for="inputPassword2" class="sr-only">Username</label>
-              <input type="text" class="form-control login-username" placeholder="Username">
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-              <label for="inputPassword2" class="sr-only">Password</label>
-              <input type="password" class="form-control login-password" id="inputPassword2" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-secondary mb-2 login">Login</button>
-          </form>
-        </div>
-      </div>
+    </div> -->
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

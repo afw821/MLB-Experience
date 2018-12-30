@@ -31,3 +31,7 @@ body {
 .playerSearch{
 margin-right:5px;
 }
+.jumbotron{
+    margin-top:25px;
+    opacity:0.8;
+}
