@@ -3,7 +3,7 @@ const playerSearch = function (e) {
     e.preventDefault();
     let name = $('.playerInput').val().trim();
 
-    const queryUrl = `http://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&name_part='${name}%25'`;
+    const queryUrl = `https://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&name_part='${name}%25'`;
     $.ajax({
         url: queryUrl,
         method: 'GET'
