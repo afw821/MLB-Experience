@@ -14,9 +14,13 @@ Prerequisites
   The dependencies are as follows: 
 
   "dependencies": {
+  
     "bcryptjs": "^2.4.3",
+    
     "express": "^4.16.4",
+    
     "mongoose": "^5.4.0",
+    
     "path": "^0.12.7"
   }
 If you use the above Heroku link there is no need to install these dependencies.
